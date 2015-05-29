@@ -14,29 +14,45 @@ Material Color is a javascript color generator. It is helpful when creating desi
 ###Functions:
 
 ####getRandomAccent():
->name: Name of the color
->index: What index this accent is from
->accent: The hexadecimal color code
->light: Indicates if this color is light. It is recommended to match light colors backgrounds with black text.
+name: Name of the color
+
+index: What index this accent is from
+
+accent: The hexadecimal color code
+
+light: Indicates if this color is light. It is recommended to match light colors backgrounds with black text.
+
+
     MaterialColor.getRandomAccent();
     //{ name: 'amber', index: 3, accent: '#ffab00', light: false }
 
 
 ####getRandomHue():
->name: Name of the color
->index: What index this accent is from
->accent: The hexadecimal color code
->light: indicates if this color is light. It is recommended to match light colors backgrounds with black text.
+name: Name of the color
+
+index: What index this accent is from
+
+accent: The hexadecimal color code
+
+light: indicates if this color is light. It is recommended to match light colors backgrounds with black text.
+
+
     MaterialColor.getRandomHue();
     //{ name: 'yellow', hue: '#fdd835', index: 6, light: false }
 
 
 ####getRandomColor():
->name: Name of the color
->hue.colors: An array of colors in descending shades.
->hue.light: Indicates at what index the last light color is at.
->accent.colors: An array of colors in descending shades.
->accent.light: Indicates at what index the last light color is at.
+name: Name of the color
+
+hue.colors: An array of colors in descending shades.
+
+hue.light: Indicates at what index the last light color is at.
+
+accent.colors: An array of colors in descending shades.
+
+accent.light: Indicates at what index the last light color is at.
+
+
     MaterialColor.getRandomColor();
     //{ name: 'yellow',
     //    hue:
