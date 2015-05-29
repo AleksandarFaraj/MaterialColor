@@ -1,10 +1,10 @@
 {
-  "name": "MaterialColors",
+  "name": "MaterialColor",
   "version": "0.0.1",
   "authors": [
     "Aleksandar Faraj <aleksandarfaraj�gmail.com>"
   ],
-  "description": "Accessible material colors",
+  "description": "Material Color is a javascript color generator. It is helpful when creating designs that follow Google Material Design.",
   "main": "color.js",
   "keywords": [
     "color",

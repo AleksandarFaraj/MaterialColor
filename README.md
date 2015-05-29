@@ -72,4 +72,29 @@ accent.light: Indicates at what index the last light color is at.
     //     { light: 0,
     //       colors: [ '#ffff8d', '#ffff00', '#ffea00', '#ffd600' ] } }
 
+array:
+returns an array with all the color objects.
+    MaterialColor.array
+    //[red,        pink,      purple, deepPurple, indigo,
+    // blue,       lightBlue, cyan,   teal,       green,
+    // lightGreen, lime,      yellow, amber,      orange,
+    // deepOrange]
 
+A color object:
+    //{ name: 'yellow',
+    //    hue:
+    //     { light: 2,
+    //       colors:
+    //        [ '#fffde7',
+    //          '#fff9c4',
+    //          '#fff59d',
+    //          '#fff176',
+    //          '#ffee58',
+    //          '#ffeb3b',
+    //          '#fdd835',
+    //          '#fbc02d',
+    //          '#f9a825',
+    //          '#f57f17' ] },
+    //    accent:
+    //     { light: 0,
+    //       colors: [ '#ffff8d', '#ffff00', '#ffea00', '#ffd600' ] } }
