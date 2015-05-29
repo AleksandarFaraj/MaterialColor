@@ -1,0 +1,23 @@
+{
+  "name": "MaterialColors",
+  "version": "0.0.1",
+  "authors": [
+    "Aleksandar Faraj <aleksandarfaraj�gmail.com>"
+  ],
+  "description": "Accessible material colors",
+  "main": "color.js",
+  "keywords": [
+    "color",
+    "material",
+    "design",
+    "random"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
