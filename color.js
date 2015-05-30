@@ -412,10 +412,23 @@ function Colors() {
 Colors.prototype.getRandomColor = function () {
     return this.array[getRandom(this.array.length)];
 };
-Colors.prototype.getRandomHue = function () {
-    var color = this.getRandomColor();
+Colors.prototype.getRandomHue = function (color, min, max) {
+    if (!color) {
+        color = this.getRandomColor();
+    }
     var hues = color.hue.colors;
-    var index = getRandom(hues.length);
+
+    var index;
+    if (min) {
+        var to = hues.length;
+        if (max) {
+            to = max;
+        }
+        index = getRandom(to - min) + min;
+    } else {
+        index = getRandom(hues.length);
+    }
+
     var hue = hues[index];
     var light = false;
     if (index <= color.hue.light) {
@@ -424,9 +437,17 @@ Colors.prototype.getRandomHue = function () {
     return {
         name: color.name,
         hue: hue,
-        index:index,
+        index: index,
         light: light
     };
+};
+Colors.prototype.getRandomHues = function () {
+    var color = this.getRandomColor();
+    var lightHue = this.getRandomHue(color,0,color.hue.colors.length-1);
+    var darkHue = this.getRandomHue(color,lightHue.index+1,color.hue.colors.length);
+    return { name: color.name,
+        light: lightHue,
+        dark: darkHue}
 };
 Colors.prototype.getRandomAccent = function () {
     var color = this.getRandomColor();
@@ -439,7 +460,7 @@ Colors.prototype.getRandomAccent = function () {
     }
     return {
         name: color.name,
-        index:index,
+        index: index,
         accent: accent,
         light: light
     };

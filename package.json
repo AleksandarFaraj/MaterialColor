@@ -1,0 +1,25 @@
+{
+  "name": "material-color",
+  "version": "0.0.1",
+  "description": "Material Color is a javascript color generator. It is helpful when creating designs that follow Google Material Design.",
+  "main": "color.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AleksandarFaraj/MaterialColor.git"
+  },
+  "keywords": [
+    "material",
+    "design",
+    "color",
+    "random"
+  ],
+  "author": "Aleksandar Faraj <aleksandarfaraj�gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AleksandarFaraj/MaterialColor/issues"
+  },
+  "homepage": "https://github.com/AleksandarFaraj/MaterialColor"
+}
